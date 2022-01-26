@@ -60,9 +60,9 @@ button {
 /* My UX Skills section coded using CSS flex */
 .flexContainer {
   display: flex;
-  width: 800px;
+  width: 100%;
   justify-self: center;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   background-color: #F6977B
   
@@ -70,13 +70,14 @@ button {
 
 /* My Work section Constructed using CSS Grid */
 .workGrid {
+  width: 70%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas: "topRow"
   "secondRow"
   "secondRow";
-  background-color: #F6977B
+  background-color: #F6977B;
 }
 
 /* Footer */
@@ -86,17 +87,23 @@ footer {
   display: flex;
   justify-content: space-evenly;
 }
-ul {
-  display: inline-block;
-  vertical-align: top;
-  justify-self: center;
-}
+
+
 /* For mobile: */
 @media only screen and (max-width: 600px) {
-  [class*="heroImage"] {
-    width: 100%;
+  body{
+    width:100%;
   }
-  [class*="headshot"] {
-    max-height: 50%;
+  .flexContainer {
+    display: flex;
+    align-items: flex-start;
+  }
+  .heroImage {
+    width: 50%;
+  }
+  .workGrid {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
