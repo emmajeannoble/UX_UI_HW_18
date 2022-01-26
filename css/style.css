@@ -1,0 +1,102 @@
+/* For desktop: */
+
+body {
+  margin-left: 100px;
+  margin-right: 100px;
+  font-family: 'Nunito', sans-serif;
+  
+}
+
+/* Navbar */
+.inline-block {
+  display: inline-block;
+  vertical-align:top;
+}
+
+.class {
+  width: 23%;
+  padding: 1%;
+}
+ul {
+  display: flex;
+  width: 50%;
+  margin-left: auto;
+}
+.logo {
+  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+/* hero image */
+.heroImage {
+  height: 600px;
+  padding-left: 100px;
+  padding-top: 0 px;
+  margin-bottom: -300px;
+  display: flex;
+  justify-content: space-around;
+}
+.headshot {
+  margin-top: -50px;
+}
+.name {
+  padding-left: 360px;
+}
+.aboutMe {
+  padding-left: 30px;
+  display: flex;
+  justify-content: start;
+  background-color: #F6977B;
+  height: 130px;
+}
+button {
+  background-color: #A6DEA7;
+  outline-color: none;
+  border-radius: 36px;
+  color: white;
+}
+
+/* My UX Skills section coded using CSS flex */
+.flexContainer {
+  display: flex;
+  width: 800px;
+  justify-self: center;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #F6977B
+  
+}
+
+/* My Work section Constructed using CSS Grid */
+.workGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "topRow"
+  "secondRow"
+  "secondRow";
+  background-color: #F6977B
+}
+
+/* Footer */
+footer {
+  background-color: transparent;
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+ul {
+  display: inline-block;
+  vertical-align: top;
+  justify-self: center;
+}
+/* For mobile: */
+@media only screen and (max-width: 600px) {
+  [class*="heroImage"] {
+    width: 100%;
+  }
+  [class*="headshot"] {
+    max-height: 50%;
+  }
+}
